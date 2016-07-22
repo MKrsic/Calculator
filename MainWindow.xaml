@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="360" WindowStartupLocation="CenterScreen">
-    <Grid>
-
+        Title="MainWindow" Height="365.333" Width="279.067" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="Window_KeyDown">
+    <Grid Height="331" VerticalAlignment="Top" HorizontalAlignment="Left" Width="265">
+        <Label x:Name="lblDisplay" Content="" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="66" Width="245" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="30"
+               Background="Azure"/>
+        <Grid Margin="10,126,10,10">
+            <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="50,50,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="100,50,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="50,100,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="0,150,0,0" VerticalAlignment="Top" Width="95" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnSub" Content="-" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnDiv" Content="/" HorizontalAlignment="Left" Margin="150,0,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnMult" Content="*" HorizontalAlignment="Left" Margin="150,50,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnDot" Content="." HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnOpenBrack" Content="(" HorizontalAlignment="Left" Margin="200,0,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnClosedBrack" Content=")" HorizontalAlignment="Left" Margin="200,50,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
+            <Button x:Name="btnEquals" Content="=" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" Width="45" Height="95" Click="btn_Click"/>
+        </Grid>
+        <Button x:Name="btnClr" Content="C" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="45" Height="45" Click="btn_Click"/>
     </Grid>
 </Window>

@@ -1,1 +1,15 @@
 D:\Projekti\VisualStudio\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\Projekti\VisualStudio\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\Projekti\VisualStudio\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\MainWindow.g.cs
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\App.g.cs
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.cache
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator_MarkupCompile.lref
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\MainWindow.baml
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.g.resources
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\Projekti\VisualStudio\Calculator\Calculator\obj\Debug\App.baml

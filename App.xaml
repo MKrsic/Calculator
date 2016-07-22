@@ -4,6 +4,72 @@
              xmlns:local="clr-namespace:Calculator"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <LinearGradientBrush x:Key="ButtonBackground" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#E0ECF9" Offset="0"/>
+            <GradientStop Color="#D1E0EF" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ButtonBackgroundHover" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FFFFFD" Offset="0"/>
+            <GradientStop Color="#F8E187" Offset="0.5"/>
+            <GradientStop Color="#FCEC8D" Offset="1"/>
+        </LinearGradientBrush>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="#1E395B" />
+            <Setter Property="FontFamily" Value="Arial" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <!--Normalno stanje gumba-->
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="3" 
+                                Background="{TemplateBinding Background}" 
+                                BorderThickness="1" 
+                                BorderBrush="#ABBAD0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <!--Hover iznad gumba-->
+                <Trigger Property="Button.IsMouseOver" Value="True">
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="3" 
+                                        Background="{StaticResource ButtonBackgroundHover}" 
+                                        BorderThickness="1" 
+                                        BorderBrush="#EDC958">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <!--Pritisnuti gumb-->
+                <Trigger Property="Button.IsPressed" Value="True">
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="FontWeight" Value="Regular"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="3" 
+                                        Background="#FFE48A" 
+                                        BorderThickness="1" 
+                                        BorderBrush="#C2782C">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
     </Application.Resources>
 </Application>
